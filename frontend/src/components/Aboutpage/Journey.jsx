@@ -4,6 +4,9 @@ import studentsImg from "../../assets/student.jpg";
 import a from "../../assets/a.jpg";
 import b from "../../assets/b.jpg";
 import c from "../../assets/c.png";
+import interactiveIcon from "../../assets/line.png";
+import expertIcon from "../../assets/cap.png"; // or .png
+import personalizedIcon from "../../assets/human.png";
 
 const Journey = () => {
   return (
@@ -19,52 +22,63 @@ const Journey = () => {
           attention to detail, and a focus on meaningful growth.
         </p>
 
-        {/* Feature 1 */}
         <div className="flex items-start gap-4 sm:gap-5 mb-6 text-left">
-          <span className="w-12 h-12 sm:w-[55px] sm:h-[55px] flex items-center justify-center rounded-full bg-emerald-50 text-emerald-500 text-xl sm:text-2xl flex-shrink-0">
-            <i className="fas fa-chalkboard-teacher"></i>
-          </span>
-          <div>
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
-              Expert-led courses
-            </h3>
-            <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
-              Learn from experienced professionals in fields like marketing,
-              design, development, finance, and more.
-            </p>
-          </div>
+        <div className="w-12 h-12 sm:w-[55px] sm:h-[55px] flex items-center justify-center rounded-full bg-emerald-50 flex-shrink-0">
+          <img 
+            src={expertIcon} 
+            alt="Expert-led courses" 
+            className="w-6 h-6 sm:w-7 sm:h-7"
+          />
         </div>
+        <div>
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Expert-led courses
+          </h3>
+          <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+            Learn from experienced professionals in fields like marketing,
+            design, development, finance, and more.
+          </p>
+        </div>
+      </div>
 
-        {/* Feature 2 */}
-        <div className="flex items-start gap-4 sm:gap-5 mb-6 text-left">
-          <span className="w-12 h-12 sm:w-[55px] sm:h-[55px] flex items-center justify-center rounded-full bg-pink-50 text-pink-500 text-xl sm:text-2xl flex-shrink-0">
-            <i className="fas fa-user-graduate"></i>
-          </span>
-          <div>
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
-              Personalized learning paths
-            </h3>
-            <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
-              Tailor your journey with courses that align with your unique goals
-              and pace.
-            </p>
-          </div>
+      {/* Feature 2 */}
+      <div className="flex items-start gap-4 sm:gap-5 mb-6 text-left">
+        <div className="w-12 h-12 sm:w-[55px] sm:h-[55px] flex items-center justify-center rounded-full bg-pink-50 flex-shrink-0">
+          <img 
+            src={personalizedIcon} 
+            alt="Personalized learning paths" 
+            className="w-6 h-6 sm:w-7 sm:h-7"
+          />
         </div>
+        <div>
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Personalized learning paths
+          </h3>
+          <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+            Tailor your journey with courses that align with your unique goals
+            and pace.
+          </p>
+        </div>
+      </div>
 
         {/* Feature 3 */}
-        <div className="flex items-start gap-4 sm:gap-5 text-left">
-          <span className="w-12 h-12 sm:w-[55px] sm:h-[55px] flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-xl sm:text-2xl flex-shrink-0">
-            <i className="fas fa-laptop-code"></i>
-          </span>
-          <div>
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
-              Interactive learning
-            </h3>
-            <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
-              Engage with multimedia content, quizzes, and assignments designed
-              to make learning dynamic and enjoyable.
-            </p>
-          </div>
+      <div className="flex items-start gap-4 sm:gap-5 text-left">
+        <div className="w-12 h-12 sm:w-[55px] sm:h-[55px] flex items-center justify-center rounded-full bg-purple-100 flex-shrink-0">
+          <img 
+            src={interactiveIcon} 
+            alt="Interactive learning" 
+            className="w-6 h-6 sm:w-7 sm:h-7"
+          />
+        </div>
+        <div>
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Interactive learning
+          </h3>
+          <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+            Engage with multimedia content, quizzes, and assignments designed
+            to make learning dynamic and enjoyable.
+          </p>
+        </div>
         </div>
       </div>
 
