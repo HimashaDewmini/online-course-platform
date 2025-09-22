@@ -7,10 +7,10 @@ const LearningExperienceSection = () => {
     <div className="bg-gray-50 py-16 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Left Side - Desktop Setup Image */}
+          
           <div className="flex-1 relative">
             <div className="relative">
-              {/* Website content mockup */}
+              
               <div className="mt-8 px-4 w-full">
                 <img
                   src={experience}
@@ -19,7 +19,7 @@ const LearningExperienceSection = () => {
                 />
               </div>
 
-              {/* Statistics Card */}
+            
               <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 w-48">
                 <div className="text-center">
                   <div className="text-sm text-gray-600 mb-2">
@@ -39,7 +39,7 @@ const LearningExperienceSection = () => {
             </div>
           </div>
 
-          {/* Right Side - Content */}
+         
           <div className="flex-1 space-y-8">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
@@ -52,7 +52,7 @@ const LearningExperienceSection = () => {
               </p>
             </div>
 
-            {/* Statistics */}
+           
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div className="text-4xl font-bold text-gray-800 mb-2">
@@ -74,11 +74,25 @@ const LearningExperienceSection = () => {
               </div>
             </div>
 
-            {/* CTA Button */}
+           
             <div className="pt-4">
-              <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-full flex items-center gap-3 transition-colors duration-200 font-medium">
+              <button
+                type="button"
+                className="flex items-center rounded-full px-8 py-4 text-white font-medium hover:scale-105 transition-all duration-300 group"
+                style={{ backgroundColor: "#0d9488" }}
+              >
                 Explore Courses
-                <ArrowRight size={20} />
+                <span className="ml-3 flex items-center justify-center w-12 h-12 rounded-full border-2 border-white bg-white/20 text-white group-hover:bg-white/40 group-hover:rotate-45 transition-all duration-300 shadow-lg">
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7 17L17 7M17 7H9M17 7V15" />
+                  </svg>
+                </span>
               </button>
             </div>
           </div>
